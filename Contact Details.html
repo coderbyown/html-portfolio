@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Contact Details</title>
+</head>
+<body>
+  <h2>My Contact Details:</h2>
+  <p>My Fictional address</p>
+  <p>87878978724653</p>
+  <p>myemail@gmail.com</p>
+  <hr>
+  <form action="mailto:archna20001@gmail.com" method = "post"       enctype="text/plain">
+    <label>Your Name:</label>
+    <input type="text" name ="your name">
+    <!-- <input type="color"> -->
+    <br>
+    <label>Do you want to sign up to the email list</label>
+    <input type="checkbox">
+    <!-- <input type="submit"> -->
+    <br>
+    <br>
+    <label>Your Email:</label>
+    <input type="email" name ="your email">
+    <!-- <input type="submit"> -->
+    <br>
+    <br>
+    <label>Password: </label>
+    <input type="password">
+    <!-- <input type="submit"> -->
+    <br>
+    <br>
+    <label>Your message: </label>
+    <textarea name="your message" id="" cols="30" rows="10"></textarea>
+    <input type="submit">
+  </form>
+
+  <hr>
+  <br>
+  <form action="">
+    <div class ="form example">
+      <label for="name">Enter your name: </label>
+      <input type="text" name = "name"  autocomplete="off" required>
+    </div>
+
+    <div class ="from example">
+      <label for="email">Enter your email: </label>
+      <input type="email" name ="email" required>
+    </div>
+
+    <div class = "form example">
+      <input type="submit">
+    </div>
+
+    <!-- <button class="favorite styled"
+        type="button">
+    Add to favorites
+        </button> -->
+  </form>
+
+  <hr><br>
+  <!-- Form which will send a GET request to the current URL -->
+      <form method="get">
+        <label>Name:
+          <input name="submitted-name" autocomplete="name" />
+        </label>
+        <button>Save</button>
+      </form>
+      
+      <!-- Form which will send a POST request to the current URL -->
+      <form method="post">
+        <label>Name:
+          <input name="submitted-name" autocomplete="name" />
+        </label>
+        <button>Save</button>
+      </form>
+      
+      <!-- Form with fieldset, legend, and label -->
+      <form method="post">
+        <fieldset>
+          <legend>Do you agree to the terms?</legend>
+          <label><input type="radio" name="radio" value="yes" /> Yes</label>
+          <label><input type="radio" name="radio" value="no" /> No</label>
+        </fieldset>
+      </form>
+    <hr><br>
+
+    <form>
+      <fieldset> 
+        <legend>Select a maintenance drone</legend>
+        <label><input type="radio" name = "drone">Huey</label>
+        <br><!--if you'll try to put the label without a name then it'll select             everyone like a checkbox so name attribute is must-->
+        <label><input type="radio" name = "drone">Dewey</label>
+        <br>
+        <label><input type="radio" name = "drone">Louie</label>
+      </fieldset>
+    </form>   
+    <hr><br>
+
+    <form >
+      <fieldset><!-- checked is for default box like in this email-->
+        <legend>Please select your preferred contact method:</legend>
+        <label><input type="radio" name="contact" checked >Email</label>
+        <label><input type="radio" name="contact">Phone</label>
+        <label><input type="radio" name="contact">Mail</label>
+        <br>
+        <input type="submit">
+      </fieldset>  
+    </form>
+    <hr><br>
+
+    <form>
+      <fieldset>
+        <legend>Choose your favorite monster</legend>
+        <label><input type="radio" name="monster">Kraken</label><br>
+        <label><input type="radio" name="monster">Sasquatch</label><br>
+        <label><input type="radio" name="monster">Mothman</label><br>
+      </fieldset>
+    </form>
+  </body>
+  
+</html>
